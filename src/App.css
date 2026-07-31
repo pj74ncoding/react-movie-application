@@ -1,0 +1,23 @@
+
+.app {
+  display: grid;
+  grid-template-rows: 80px auto;
+  background-color: var(--main-background-color);
+  transition: background-color 0.25s ease-in-out;
+}
+
+.error-message-container{
+  color: black;
+  height: 150px;
+  width: 40%;
+  margin: auto;
+  border: 2px solid black;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  background-color: white;
+  position: relative;
+  margin-bottom: 250px;
+}

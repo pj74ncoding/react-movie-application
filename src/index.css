@@ -1,0 +1,66 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("./assets/fonts/Montserrat-VariableFont_wght.woff2");
+}
+
+@font-face {
+  font-family: "Audiowide-Regular";
+  src: url("assets/fonts/Audiowide-Regular.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.align-center {
+  display: flex;
+  align-items: center;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --primary-text-color: #0a0a0a;
+  --secondary-text-color: #fff;
+  --toggle-bg: #f0eb9d;
+  --toggle-fg: #ffd000;
+  --toggle-border: 2px solid black;
+  --main-background-color: white;
+  --nav-border-bottom: 1px solid black;
+  --active-rating: 1px solid black;
+  --movielist-heading-bg: black;
+  --movielist-heading-color: white;
+  --footer-border: 2px solid black;
+  --footer-bg: white;
+  --footer-text-color: #0a0a0a;
+  --footer-hover-bg: black;
+  --footer-hover-color: white;
+  --color: white;
+}
+
+.dark {
+  --primary-text-color: #f6f6f6;
+  --secondary-text-color: #0a0a0a;
+  --toggle-bg: #283452;
+  --toggle-fg: #00a6ff;
+  --toggle-border: 2px solid white;
+  --main-background-color: #8a2be2;
+  --nav-border-bottom: 1px solid white;
+  --active-rating: 1px solid white;
+  --movielist-heading-bg: rgb(230, 178, 60);
+   --movielist-heading-color: #8a2be2;
+  --footer-border: none;
+  --footer-bg: rgb(230, 178, 60);
+  --footer-text-color: #8a2be2;
+  --footer-hover-bg: #8a2be2;
+  --footer-hover-color: rgb(230, 178, 60);
+  /* --footer-bg: rgb(230, 178, 60); */
+}
