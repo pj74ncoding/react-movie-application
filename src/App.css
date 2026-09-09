@@ -1,12 +1,12 @@
-
 .app {
   display: grid;
   grid-template-rows: 80px auto;
   background-color: var(--main-background-color);
   transition: background-color 0.25s ease-in-out;
+  padding-bottom: 50px;
 }
 
-.error-message-container{
+.error-message-container {
   color: black;
   height: 150px;
   width: 40%;

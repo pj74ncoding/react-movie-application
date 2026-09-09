@@ -27,9 +27,11 @@ export const YoutubeMovieApp = () => {
         setisDisplayed={setIsDisplayed}
       />
 
-      <div className="error-message-container">
-        {isDisplayed && <p><b>{errorMessage}</b></p>}
-      </div>
+      {isDisplayed && (
+        <div className="error-message-container">
+          <p><b>{errorMessage}</b></p>
+        </div>
+      )}
       <Footer />
     </div>
   );
