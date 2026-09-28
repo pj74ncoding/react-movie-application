@@ -1,7 +1,7 @@
 # react-movie-application
 
 
-A Movie application that shows movies
+A movie application that shows movies
 
 Live Demo: https://react-investment-calculator-nine.vercel.app/
 
