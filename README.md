@@ -107,7 +107,6 @@ Frontend:
 
 ```bash
 cd react-movie-application
-
 npm install
 ```
 
