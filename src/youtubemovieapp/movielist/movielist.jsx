@@ -3,12 +3,11 @@ import _ from "lodash";
 import "./movielist.css";
 import MovieCard from "./moviecard";
 import { Filteredgroup } from "../components/filteredgroup";
-const Movielist = ({ type, title, setIsDisplayed}) => {
+const Movielist = ({ type, title, setIsDisplayed }) => {
   const [movies, setMovies] = useState([]);
   const [filteredMovies, setFilteredMovies] = useState([]);
   const [minRating, setMinRating] = useState(0);
   const [sortOrder, setSortOrder] = useState("");
-
 
   const [sort, setSort] = useState({
     by: "default",
@@ -28,14 +27,11 @@ const Movielist = ({ type, title, setIsDisplayed}) => {
 
   const fetchData = async () => {
     try {
-    
-            const apiKey = import.meta.env.VITE_TMDB_API_KEY;
-      // const result = await fetch(
-      //   `https://api.themoviedb.org/3/movie/${type}?api_key=5a1dbe02eaed7aed89976013dcbc8aef`,
-      // );
-         const result = await fetch(
-        `https://api.themoviedb.org/3/movie/${type}?api_key=${apiKey}`,
+      // const apiKey = import.meta.env.VITE_TMDB_API_KEY;
+      const result = await fetch(
+        `https://api.themoviedb.org/3/movie/${type}?api_key=5a1dbe02eaed7aed89976013dcbc8aef`,
       );
+
       console.log("response", result);
       const data = await result.json();
       console.log("d", data);
@@ -43,7 +39,6 @@ const Movielist = ({ type, title, setIsDisplayed}) => {
       setFilteredMovies(data.results);
     } catch (error) {
       setIsDisplayed(true);
-      
     }
   };
 
@@ -82,7 +77,7 @@ const Movielist = ({ type, title, setIsDisplayed}) => {
   // }
 
   console.log("movielist", movies);
-  
+
   return (
     <>
       <section className="movie-listing-section" id={type}>
