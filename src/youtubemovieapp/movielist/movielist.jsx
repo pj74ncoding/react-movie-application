@@ -28,8 +28,10 @@ const Movielist = ({ type, title, setIsDisplayed}) => {
 
   const fetchData = async () => {
     try {
+      // const apiKey = import.meta.env.VITE_TMDB_API_KEY;
+            const apiKey = import.meta.env.TMDB_API_KEY;
       const result = await fetch(
-        `https://api.themoviedb.org/3/movie/${type}?api_key=5a1dbe02eaed7aed89976013dcbc8aef`,
+        `https://api.themoviedb.org/3/movie/${type}?api_key=${apiKey}`,
       );
       console.log("response", result);
       const data = await result.json();
@@ -38,6 +40,7 @@ const Movielist = ({ type, title, setIsDisplayed}) => {
       setFilteredMovies(data.results);
     } catch (error) {
       setIsDisplayed(true);
+      
     }
   };
 
@@ -76,6 +79,7 @@ const Movielist = ({ type, title, setIsDisplayed}) => {
   // }
 
   console.log("movielist", movies);
+  
   return (
     <>
       <section className="movie-listing-section" id={type}>
