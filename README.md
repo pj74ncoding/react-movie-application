@@ -3,7 +3,7 @@
 
 A movie application that shows movies
 
-Live Demo: https://react-investment-calculator-nine.vercel.app/
+Live Demo: https://react-movie-application-rouge.vercel.app/
 
 ---
 
