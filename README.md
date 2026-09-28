@@ -72,8 +72,10 @@ To find a youtube video to show me how to do a movie application using an API.
 
 Client (Frontend)
 
-```
+Folder Structure Example:
 
+```
+```
 2.
 
 client/
@@ -86,7 +88,6 @@ client/
         +---components
             +---movielist
 
-
 ```
 
 ---
@@ -98,8 +99,6 @@ client/
 ```bash
 git clone https://github.com/pj74ncoding/react-movie-application.git
 cd  react-movie-application
-
-
 
 ```
 
