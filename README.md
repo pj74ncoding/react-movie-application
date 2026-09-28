@@ -75,7 +75,6 @@ Client (Frontend)
 Folder Structure Example:
 
 ```
-```
 2.
 
 client/
