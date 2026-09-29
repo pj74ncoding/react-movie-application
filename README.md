@@ -1,6 +1,6 @@
 # react-movie-application
 
-
+ 
 A movie application that shows movies
 
 Live Demo: https://react-movie-application-rouge.vercel.app/
@@ -29,6 +29,8 @@ Live Demo: https://react-movie-application-rouge.vercel.app/
 
 ### Motivation
 
+-Personal project
+
 To find a youtube video to show me how to do a movie application using an API.
 
 ### Learning Outcomes
@@ -37,6 +39,7 @@ To find a youtube video to show me how to do a movie application using an API.
 - Learnt you can use the var() function in CSS to set colour themes
 - Learnt about before and after pseudo‑elements
 - Learnt about linear-gradient in CSS
+- Learnt you can use Lodash to for filtering
 
 ## Project Features
 
