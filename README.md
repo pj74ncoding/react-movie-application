@@ -29,7 +29,7 @@ Live Demo: https://react-movie-application-rouge.vercel.app/
 
 ### Motivation
 
--Personal project
+- Personal project
 
 To find a youtube video to show me how to do a movie application using an API.
 
